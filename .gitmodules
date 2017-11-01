@@ -1,0 +1,3 @@
+[submodule "Gallery"]
+	path = Gallery
+	url = https://github.com/hubcin/android-image-picker.git
