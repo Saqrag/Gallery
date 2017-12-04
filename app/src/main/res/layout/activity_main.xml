@@ -5,9 +5,125 @@
     android:layout_height="match_parent"
     tools:context="com.zuga.gallery.MainActivity">
 
-    <Button
-        android:id="@+id/bn_gallery"
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Galley!" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bn_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galley!" />
+
+            <CheckBox
+                android:id="@+id/include_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="include_image" />
+
+            <CheckBox
+                android:id="@+id/include_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="include_video" />
+
+            <CheckBox
+                android:id="@+id/include_gif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="include_gif" />
+
+            <CheckBox
+                android:id="@+id/crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="crop" />
+
+            <CheckBox
+                android:id="@+id/allow_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="allow_original" />
+
+            <CheckBox
+                android:id="@+id/allow_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="allow_edit" />
+
+            <CheckBox
+                android:id="@+id/only_select_single_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="only_select_single_type" />
+
+            <EditText
+                android:id="@+id/max_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="max_count"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/max_video_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="max_video_count"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/max_image_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="max_image_count"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/max_gif_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="max_gif_count"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/video_max_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="video_max_duration"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/video_min_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="video_min_duration"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/crop_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="crop_x"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/crop_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="crop_y"
+                android:inputType="number" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.zuga.imagepicker.widget.StrokeImageView
+        android:id="@+id/iv_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
