@@ -16,6 +16,7 @@ import com.zuga.imagepicker.ImagePicker;
 import com.zuga.imagepicker.activity.ImagePickerActivity;
 import com.zuga.imagepicker.model.Content;
 import com.zuga.imagepicker.util.SystemUtil;
+import com.zuga.imagepicker.widget.EnableView;
 import com.zuga.imagepicker.widget.StrokeImageView;
 
 import java.util.ArrayList;
@@ -61,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
         ivTest.setStrokeColor(Color.BLACK, SystemUtil.dp(2));
         ivTest.setSelected(true);
         Glide.with(ivTest).load("/storage/emulated/0/DCIM/Camera/IMG_20171005_112200.jpg").into(ivTest);
+
+
+        EnableView view = findViewById(R.id.ev_test);
+        view.setDisable(R.drawable.action_send_enable);
+        view.setEnable(R.drawable.action_submit);
+        view.setEnabled(false);
     }
 
     private void refreshValue() {

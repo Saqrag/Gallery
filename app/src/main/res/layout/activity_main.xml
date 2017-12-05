@@ -14,12 +14,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/bn_gallery"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Galley!" />
-
             <CheckBox
                 android:id="@+id/include_image"
                 android:layout_width="wrap_content"
@@ -119,8 +113,19 @@
                 android:hint="crop_y"
                 android:inputType="number" />
 
+            <Button
+                android:id="@+id/bn_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galley!" />
+
         </LinearLayout>
     </ScrollView>
+
+    <com.zuga.imagepicker.widget.EnableView
+        android:id="@+id/ev_test"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
 
     <com.zuga.imagepicker.widget.StrokeImageView
         android:id="@+id/iv_test"
