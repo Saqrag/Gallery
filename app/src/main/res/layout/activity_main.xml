@@ -85,6 +85,13 @@
                 android:inputType="number" />
 
             <EditText
+                android:id="@+id/max_gif_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="max_gif_length"
+                android:inputType="number" />
+
+            <EditText
                 android:id="@+id/video_max_duration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
