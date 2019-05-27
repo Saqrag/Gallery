@@ -45,10 +45,16 @@
                 android:text="allow_original" />
 
             <CheckBox
-                android:id="@+id/allow_edit"
+                android:id="@+id/allow_edit_image"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="allow_edit" />
+                android:text="allow_edit_image" />
+
+            <CheckBox
+                android:id="@+id/allow_edit_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="allow_edit_video" />
 
             <CheckBox
                 android:id="@+id/only_select_single_type"
