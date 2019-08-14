@@ -1,7 +1,7 @@
 package com.zuga.gallery;
 
 import android.app.Application;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 
 import com.zuga.imagepicker.ImagePicker;
 import com.zuga.imagepicker.PickerConfig;
