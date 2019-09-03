@@ -3,7 +3,9 @@ package com.zuga.gallery;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.Editable;
 import android.text.TextUtils;
 import android.widget.CheckBox;
@@ -62,8 +64,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         EnableView view = findViewById(R.id.ev_test);
-        view.setDisable(R.drawable.action_send_enable);
-        view.setEnable(R.drawable.action_submit);
+        view.setDisable(R.drawable.gallery_action_send_enable);
+        view.setEnable(R.drawable.gallery_action_submit);
         view.setEnabled(false);
     }
 
