@@ -3,5 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="title_bar_background">#FF4081</color>
+    <color name="gallery_widget_color">#ffffff</color>
+    <color name="gallery_title_color">#343434</color>
+    <color name="gallery_status_bar">#343434</color>
 </resources>

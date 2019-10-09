@@ -1,6 +1,7 @@
 package com.zuga.gallery;
 
 import android.app.Application;
+
 import androidx.core.content.ContextCompat;
 
 import com.zuga.imagepicker.ImagePicker;
@@ -22,7 +23,12 @@ public class App extends Application {
         super.onCreate();
         KeyboardManager.init(this);
         SmallVideoDefaultParams.init(this);
-        ImagePicker.init(new PickerConfig.Builder().setAppContext(getApplicationContext())
-                .setToolbaseColor(ContextCompat.getColor(getApplicationContext(), R.color.title_bar_background)).build());
+        ImagePicker.init(
+                new PickerConfig.Builder().setAppContext(getApplicationContext())
+                        .setToolbaseColor(ContextCompat.getColor(getApplicationContext(), R.color.gallery_title_color))
+                        .setWidgetColor(ContextCompat.getColor(getApplicationContext(), R.color.gallery_widget_color))
+                        .setStatusBarColor(ContextCompat.getColor(getApplicationContext(), R.color.gallery_status_bar))
+                        .build()
+        );
     }
 }
