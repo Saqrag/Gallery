@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                         .setCropAspectX(cropX)
                         .setCropAspectY(cropY)
                         .allowOriginal(((CheckBox) findViewById(R.id.allow_original)).isChecked())
+                        .allowEditImage(((CheckBox) findViewById(R.id.allow_edit)).isChecked())
                         .allowEditVideo(((CheckBox) findViewById(R.id.allow_edit)).isChecked())
                         .onlySelectSingleType(((CheckBox) findViewById(R.id.only_select_single_type)).isChecked())
                         .forResult(REQUEST_CODE);
