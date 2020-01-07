@@ -1,11 +1,12 @@
 package com.zuga.gallery;
 
 import android.app.Application;
-import android.support.v4.content.ContextCompat;
+
+import androidx.core.content.ContextCompat;
 
 import com.zuga.imagepicker.ImagePicker;
 import com.zuga.imagepicker.PickerConfig;
-import com.zuga.keyboard.helpers.KeyboardManager;
+import com.zuga.ime.keyboard.DictionaryManager;
 import com.zuga.video.record.SmallVideoDefaultParams;
 
 /**
@@ -20,7 +21,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        KeyboardManager.init(this);
+        DictionaryManager.getInstance(this);
         SmallVideoDefaultParams.init(this);
         ImagePicker.init(new PickerConfig.Builder().setAppContext(getApplicationContext())
                 .setToolbaseColor(ContextCompat.getColor(getApplicationContext(), R.color.title_bar_background)).build());
